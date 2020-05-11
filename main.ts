@@ -1,7 +1,4 @@
-input.onButtonPressed(Button.A, function () {
-    music.startMelody(music.builtInMelody(Melodies.Birthday), MelodyOptions.Once)
-})
-input.onButtonPressed(Button.B, function () {
+function I_Will_Follow_You () {
     music.playTone(262, music.beat(BeatFraction.Half))
     music.playTone(294, music.beat(BeatFraction.Half))
     music.playTone(349, music.beat(BeatFraction.Half))
@@ -43,4 +40,11 @@ input.onButtonPressed(Button.B, function () {
     music.playTone(392, music.beat(BeatFraction.Half))
     music.playTone(349, 2.5 * music.beat(BeatFraction.Whole))
     music.rest(music.beat(BeatFraction.Whole))
+}
+input.onButtonPressed(Button.A, function () {
+    music.startMelody(music.builtInMelody(Melodies.Birthday), MelodyOptions.Once)
 })
+input.onButtonPressed(Button.B, function () {
+    I_Will_Follow_You()
+})
+I_Will_Follow_You()
