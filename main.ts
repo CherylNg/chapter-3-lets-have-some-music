@@ -52,4 +52,5 @@ input.onButtonPressed(Button.A, function () {
 input.onButtonPressed(Button.B, function () {
     I_Will_Follow_You()
 })
+music.setVolume(200)
 I_Will_Follow_You()
